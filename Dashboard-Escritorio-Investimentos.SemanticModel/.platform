@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Dashboard-Escritorio-Investimentos"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cd936c2f-0c56-4fa2-832f-81e2d66a5fec"
+  }
+}
