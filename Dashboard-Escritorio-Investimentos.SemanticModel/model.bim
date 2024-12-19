@@ -757,6 +757,43 @@
           }
         ],
         "lineageTag": "d0fe2d67-09e4-4f52-933d-b5fe212e5d67",
+        "measures": [
+          {
+            "name": "Promotores",
+            "expression": "CALCULATE(COUNTROWS(NPS), NPS[Nota] >= 9)",
+            "formatString": "0",
+            "lineageTag": "ca538ed9-bc10-40d1-926d-86a246d10c35"
+          },
+          {
+            "name": "Neutros",
+            "expression": "CALCULATE(COUNTROWS(NPS), NPS[Nota] >= 7 && NPS[Nota] <= 8)",
+            "formatString": "0",
+            "lineageTag": "66c705b7-946f-4a93-b97a-bf8d45420ed8"
+          },
+          {
+            "name": "Detratores",
+            "expression": "CALCULATE(COUNTROWS(NPS), NPS[Nota] <= 6)",
+            "formatString": "0",
+            "lineageTag": "6181db7d-378c-4c98-beff-29ca73364dc5"
+          },
+          {
+            "name": "NPS Global",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "VAR Promotores = CALCULATE(COUNTROWS(NPS), NPS[Nota] >= 9) VAR Detratores = CALCULATE(COUNTROWS(NPS), NPS[Nota] <= 6) VAR TotalRespostas = COUNTROWS(NPS) RETURN ((Promotores - Detratores) / TotalRespostas) * 100",
+            "lineageTag": "07ea14f3-9808-4d47-b416-39247458bf2f"
+          },
+          {
+            "name": "Total Respostas",
+            "expression": "COUNTROWS(NPS)",
+            "formatString": "0",
+            "lineageTag": "d31cede6-52cd-4fc8-a11b-2b3e564ef2ac"
+          }
+        ],
         "partitions": [
           {
             "name": "NPS",
