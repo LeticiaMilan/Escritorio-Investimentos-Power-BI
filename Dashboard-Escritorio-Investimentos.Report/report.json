@@ -20,7 +20,29 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Página 1",
+      "displayName": "Comparador",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "42502a667cd7cb20e34c",
+      "ordinal": 2,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Produtos",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "551ea256bd58c07aae2a",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "NPS",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
