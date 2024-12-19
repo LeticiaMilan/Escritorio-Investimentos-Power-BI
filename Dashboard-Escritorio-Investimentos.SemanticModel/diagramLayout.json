@@ -7,7 +7,60 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 832,
+            "y": 34.75
+          },
+          "nodeIndex": "Clientes",
+          "nodeLineageTag": "734a05a6-6707-402b-be85-2a291dfc007a",
+          "size": {
+            "height": 315,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1168,
+            "y": 0
+          },
+          "nodeIndex": "NPS",
+          "nodeLineageTag": "d0fe2d67-09e4-4f52-933d-b5fe212e5d67",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 446,
+            "y": 2.25
+          },
+          "nodeIndex": "PL_1semestre",
+          "nodeLineageTag": "34a68fca-0d3a-4ef1-beb7-1b38213af324",
+          "size": {
+            "height": 191,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 447,
+            "y": 254
+          },
+          "nodeIndex": "PL_2semestre",
+          "nodeLineageTag": "6387f1e1-d4df-42b2-9ae1-f424acb28f30",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "Todas as tabelas",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,
