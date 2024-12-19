@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.60\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -47,7 +47,53 @@
       "filters": "[]",
       "height": 720.00,
       "name": "bca0cdee0c60d80800b0",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"69befa901de860470722\",\"layouts\":[{\"id\":0,\"position\":{\"x\":210.82647128553467,\"y\":14.781876130273698,\"z\":2000,\"width\":193.0882385373707,\"height\":133.1292592020819,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"NPS.Neutros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NPS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Neutros\"},\"Name\":\"NPS.Neutros\",\"NativeReferenceName\":\"Neutros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Neutros\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 133.13,
+          "width": 193.09,
+          "x": 210.83,
+          "y": 14.78,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"74c148b1543b68d05b08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.292569966698277,\"y\":166.6656374743621,\"z\":4000,\"width\":577.2322078380345,\"height\":299.79489667644395,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"NPS.Detratores\"},{\"queryRef\":\"NPS.Promotores\"},{\"queryRef\":\"NPS.Neutros\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NPS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Detratores\"},\"Name\":\"NPS.Detratores\",\"NativeReferenceName\":\"Detratores\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Promotores\"},\"Name\":\"NPS.Promotores\",\"NativeReferenceName\":\"Promotores\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Neutros\"},\"Name\":\"NPS.Neutros\",\"NativeReferenceName\":\"Neutros\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Detratores\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 299.79,
+          "width": 577.23,
+          "x": 18.29,
+          "y": 166.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"95dc9d732c01e42c16ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":403.9147098229053,\"y\":14.781876130273698,\"z\":3000,\"width\":192.0719846503319,\"height\":133.1292592020819,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"NPS.Detratores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NPS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Detratores\"},\"Name\":\"NPS.Detratores\",\"NativeReferenceName\":\"Detratores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Detratores\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 133.13,
+          "width": 192.07,
+          "x": 403.91,
+          "y": 14.78,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c6609348a54b5aa7c8e5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1029.4651875702975,\"y\":15.243808305581897,\"z\":0,\"width\":206.29953906887502,\"height\":151.4218291687802,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"NPS.NPS Global\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NPS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"NPS Global\"},\"Name\":\"NPS.NPS Global\",\"NativeReferenceName\":\"NPS Global\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"NPS Global\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 151.42,
+          "width": 206.30,
+          "x": 1029.47,
+          "y": 15.24,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e6c974d884d4a3950160\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.754486635202845,\"y\":14.781876130273698,\"z\":1000,\"width\":192.0719846503319,\"height\":133.1292592020819,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"NPS.Promotores\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NPS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Promotores\"},\"Name\":\"NPS.Promotores\",\"NativeReferenceName\":\"Promotores\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"Promotores\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 133.13,
+          "width": 192.07,
+          "x": 18.75,
+          "y": 14.78,
+          "z": 1000.00
+        }
+      ],
       "width": 1280.00
     }
   ]
