@@ -267,7 +267,7 @@
         "lineageTag": "734a05a6-6707-402b-be85-2a291dfc007a",
         "measures": [
           {
-            "name": "Quantidade de Clientes",
+            "name": "Quantidade_de_Clientes",
             "expression": "DISTINCTCOUNT('PL_Combinado'[Conta])",
             "formatString": "0",
             "lineageTag": "8b26c7f1-77e0-4e7a-aa6a-6e94bbfce1f6"
@@ -815,6 +815,11 @@
             "expression": "COUNTROWS(NPS)",
             "formatString": "0",
             "lineageTag": "d31cede6-52cd-4fc8-a11b-2b3e564ef2ac"
+          },
+          {
+            "name": "Classificação NPS",
+            "expression": "SWITCH( TRUE(), [NPS Global] >= 75, \"Zona de Excelência\", [NPS Global] >= 50, \"Zona de Qualidade\", [NPS Global] >= 0, \"Zona de Aperfeiçoamento\", \"Zona Crítica\" )",
+            "lineageTag": "464660ed-4b1e-4ed2-b345-a15344bf59f2"
           }
         ],
         "partitions": [
@@ -1749,7 +1754,7 @@
         "lineageTag": "e273c779-a1af-4068-b362-7cab3fdcdbdb",
         "measures": [
           {
-            "name": "PL Total",
+            "name": "PL_Total",
             "expression": "SUM(PL_Combinado[Valor da Posição])",
             "formatString": "0",
             "lineageTag": "c97328f6-75bd-42ef-ba0b-02056fc0895f"
