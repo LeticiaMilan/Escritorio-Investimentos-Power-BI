@@ -817,7 +817,7 @@
             "lineageTag": "d31cede6-52cd-4fc8-a11b-2b3e564ef2ac"
           },
           {
-            "name": "Classificação NPS",
+            "name": "Classificacao_NPS",
             "expression": "SWITCH( TRUE(), [NPS Global] >= 75, \"Zona de Excelência\", [NPS Global] >= 50, \"Zona de Qualidade\", [NPS Global] >= 0, \"Zona de Aperfeiçoamento\", \"Zona Crítica\" )",
             "lineageTag": "464660ed-4b1e-4ed2-b345-a15344bf59f2"
           }
@@ -1758,6 +1758,52 @@
             "expression": "SUM(PL_Combinado[Valor da Posição])",
             "formatString": "0",
             "lineageTag": "c97328f6-75bd-42ef-ba0b-02056fc0895f"
+          },
+          {
+            "name": "Clientes_DataInicio",
+            "expression": "CALCULATE(COUNTROWS(Clientes), FILTER(Clientes, Clientes[Data de Cadastro] = MIN('PL_Combinado'[Data])))",
+            "formatString": "0",
+            "lineageTag": "bd6ea66c-2daa-4dee-9cdd-c40ff878f1ee"
+          },
+          {
+            "name": "Clientes_DataTermino",
+            "expression": "CALCULATE(COUNTROWS(Clientes), FILTER(Clientes, Clientes[Data de Cadastro] = MAX('PL_Combinado'[Data])))",
+            "formatString": "0",
+            "lineageTag": "7393b482-d64e-4a1f-89d5-2a39ba30d945"
+          },
+          {
+            "name": "PL_DataInicio",
+            "expression": "CALCULATE([PL_Total], FILTER('PL_Combinado', 'PL_Combinado'[Data] = MIN('PL_Combinado'[Data])))",
+            "formatString": "0",
+            "lineageTag": "1e03d852-e8cf-493b-bb8b-3bc4f22e02b6"
+          },
+          {
+            "name": "PL_DataTermino",
+            "expression": "CALCULATE([PL_Total], FILTER('PL_Combinado', 'PL_Combinado'[Data] = MAX('PL_Combinado'[Data])))",
+            "formatString": "0",
+            "lineageTag": "0725c59c-f1e9-46ec-bd5d-869575a3f1b6"
+          },
+          {
+            "name": "Variacao_PL",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "DIVIDE([PL_DataTermino] - [PL_DataInicio], [PL_DataInicio], 0)",
+            "lineageTag": "5bd60af2-c32c-4048-b20d-85b1e9935493"
+          },
+          {
+            "name": "Variacao_Clientes",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "DIVIDE([Clientes_DataTermino] - [Clientes_DataInicio], [Clientes_DataInicio], 0)",
+            "lineageTag": "757cde69-9628-44e9-90a9-427d5badc692"
           }
         ],
         "partitions": [
